@@ -1,0 +1,25 @@
+.main-sidebar {
+    transition: width 0.3s ease;
+    width: 250px; /* ขนาดที่ต้องการเมื่อแสดง */
+}
+
+.main-sidebar.collapsed {
+    width: 0; /* ขนาดเมื่อซ่อน */
+    overflow: hidden; /* ปิดการแสดงผลเนื้อหาภายใน */
+}
+
+body {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+body.sidebar-collapsed {
+  margin-left: 0;
+}
+
+.navbar-toggler {
+  display: block !important;
+}
+
+.sidebar-bg {
+  background-color: #343a40;
+}
